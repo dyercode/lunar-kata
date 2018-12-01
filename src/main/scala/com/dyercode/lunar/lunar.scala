@@ -35,13 +35,9 @@ package object lunar {
         }
       }
 
-      println(s"chart $chart")
-      println(s"zeroed $zeroed")
       val zeroedNumeric = zeroed.map(_.mkString.toInt)
-      println(s"zN $zeroedNumeric")
       val result = zeroedNumeric.reduce(_ @+ _)
 
-      min(multiple, number)
       result
     }
   }
