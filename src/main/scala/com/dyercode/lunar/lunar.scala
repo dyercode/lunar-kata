@@ -9,9 +9,12 @@ package object lunar {
       val numberString: Seq[Int] = number.toString.map(_.asDigit)
       val addeeString: Seq[Int] = addee.toString.map(_.asDigit)
 
-      val digits = numberString.reverse.zipAll(addeeString.reverse, 0, 0).reverse
-      val addedDigits = digits.map { case (a, b) => max(a, b) }
-      addedDigits.mkString.toInt
+      numberString.reverse
+        .zipAll(addeeString.reverse, 0, 0)
+        .reverse
+        .map { case (a, b) => max(a, b) }
+        .mkString
+        .toInt
     }
 
     def @*(multiple: Int): Int = {
