@@ -1,5 +1,5 @@
-sbt-skeleton
+lunar-kata
 ============
+[![CI](https://github.com/dyercode/lunar-kata/actions/workflows/test.yml/badge.svg)](https://github.com/dyercode/lunar-kata/actions/workflows/test.yml)
 
-This is an sbt skeleton project with the latest versions of sbt, scala, and scalatest.
-Dependency definition is seperated from the build.sbt into project/dependencies.scala.
+Trying out lunar arithmetic to see if it makes a decent kata. Inspired by https://www.youtube.com/watch?v=cZkGeR9CWbk
