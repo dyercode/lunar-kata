@@ -5,8 +5,8 @@ object Dependencies {
   // Versions
 
   // Libraries
-  val scalaTest = "org.scalatest" %% "scalatest" % "3.0.5"
+  val scalaTest = "org.scalatest" %% "scalatest" % "3.2.9"
 
   // Projects
-  val lunarDependencies = Seq(scalaTest % "test")
+  val lunarDependencies = Seq(scalaTest % Test)
 }

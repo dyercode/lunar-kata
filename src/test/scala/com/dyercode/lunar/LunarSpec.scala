@@ -1,10 +1,12 @@
 package com.dyercode.lunar
 
-import org.scalatest.FunSpec
+import org.scalatest._
+import funspec._
+import com.dyercode.lunar._
 
-class LunarSpec extends FunSpec {
+class LunarSpec extends AnyFunSpec {
   describe("Carrying is hard") {
-    describe("doing math on la luna we need to simplify it") {
+    describe("doing math on the moon we need to simplify it") {
       it("so adding results in the higher digit") {
         assert(7 @+ 8 === 8)
       }
@@ -13,7 +15,7 @@ class LunarSpec extends FunSpec {
         assert(1 @+ 1 === 1)
       }
 
-      it("double digit math is similarly simple") {
+      it("double digit addition is similarly simple") {
         assert(58 @+ 19 === 59)
       }
 
@@ -25,7 +27,7 @@ class LunarSpec extends FunSpec {
         assert(3 @* 8 === 3)
       }
 
-      it("what about multiplication") {
+      it("what about multi-digit multiplication") {
         assert(17 @* 24 === 124)
       }
     }
