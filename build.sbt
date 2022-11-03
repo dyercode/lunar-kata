@@ -2,7 +2,7 @@ import Dependencies._
 
 name := "lunar-kata"
 
-scalaVersion := "3.0.0"
+scalaVersion := "3.2.1"
 
 version := "0.1"
 
