@@ -20,9 +20,7 @@ extension (number: Int) {
     val multipleDigits: Seq[Int] = multiple.toString.map(_.asDigit)
 
     val chart = numberDigits.map { a =>
-      multipleDigits.map { b =>
-        min(a, b)
-      }
+      multipleDigits.map(min(a, _))
     }
 
     val withTenMultiple = chart.reverse.zipWithIndex
@@ -37,8 +35,7 @@ extension (number: Int) {
     }
 
     val zeroedNumeric = zeroed.map(_.mkString.toInt)
-    val result = zeroedNumeric.reduce(_ @+ _)
 
-    result
+    zeroedNumeric.reduce(_ @+ _)
   }
 }
